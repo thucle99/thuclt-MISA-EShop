@@ -1,0 +1,146 @@
+.m-dialog{
+    background-color: red;
+    /* display: none; */
+}
+    /* css ui dialog-modal */
+    .m-dialog .dialog-modal{
+        position: fixed;
+        opacity: .5;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        z-index: 999;
+    }
+    .m-dialog .dialog-content{
+        position: absolute;
+        width: 800px;
+        height: 650px;
+        background-color: #ffffff;
+        z-index: 1000;
+        top: calc( 50% - 350px);
+        right: calc( 50% - 290px);
+        border-radius: 5px;
+    }
+
+    /* css header dialog */
+    .m-dialog .dialog-header{
+        display: flex;
+        padding: 24px 24px 0px 24px;
+    }
+    .m-dialog .dialog-header .dialog-header-title{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .m-dialog .dialog-header .dialog-header-close{
+      position: absolute;
+      right: 0px;
+      top:0px
+    }
+    .m-dialog .dialog-header .dialog-header-close button {
+        background-color:#ffffff;
+        border: none;
+        border-radius: 0 5px 0 0;
+        font-size: 20px;
+        padding:5px 10px;
+        outline: none;
+    }
+    .m-dialog .dialog-header .dialog-header-close button:hover{
+        background-color: #ccc;
+    }
+
+    /* css dialog-body  */
+    .dialog-body{
+        padding: 24px 24px 0px 24px;
+    }
+    .dialog-body .dialog-header-body{
+        display: flex;
+    }
+
+    .dialog-body .dialog-header-body .avatar{
+        height: 266.666px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .dialog-body .dialog-header-body .avatar .avatar-customer{
+        background-image: url("../../content/img/default-avatar.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200px;
+        width:200px;
+        height: 200px;
+        border-radius: 50%;
+        border: black 1px solid
+    }
+    .dialog-body .dialog-header-body .content-right .select-customer{
+        height: 40px;
+        width: 100%;
+        padding: 5px 15px;
+        box-sizing: border-box;
+    }
+    .dialog-body .dialog-header-body .content-right .gender{
+       display: flex;
+       align-items: center;
+       height: 40px;
+    }
+    .gender input{
+        width: 40px;
+        height: 18px;
+    }
+    
+    .dialog-center-body{
+        display: flex;
+    }
+
+    /* css dialog-footer */
+    .dialog-footer{
+        margin-top: 20px;
+        background-color: #ccc;
+        height: 50px;
+        width: 100%;
+    }
+        .dialog-footer .dialog-list-button{
+            padding-right: 24px;
+            float: right;
+            height: 100%;
+            align-items: center;
+            display: flex;
+
+        }
+        .btn{
+            padding: 10px 25px;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+        }
+        .btn-cancel{
+            right: 0px;
+            margin-right: 20px;
+            background-color: #ccc;
+        }
+        .btn-delete{
+            right: 0px;
+            margin-right: 20px;
+            background-color: #F65454;
+        }
+        .btn-delete:hover{
+            background-color: #e42929;
+        }
+
+        .btn-cancel:hover{
+            background-color: white;
+        }
+        .btn-save{
+            background-color:#019160;
+        }
+        .btn-save:hover{
+            background-color: #0eef0e;
+        }
+
+
+      

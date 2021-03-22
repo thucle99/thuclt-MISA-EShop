@@ -1,0 +1,18 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    margin: 0px;
+}
+@font-face {
+  font-family: GoogleSans-Regular;
+  src: url('/content/font/GoogleSans-Regular.off');
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1; 
+}
+

@@ -1,0 +1,13 @@
+.body-left{
+    width: 220px;
+    height: 100vh;
+    border-right: 1px solid #bbbbbb;
+}
+
+.body-right{
+    position: absolute;
+    left: 221px;
+    height: 100vh;
+    top: 0px;
+    width: calc(100% - 221px);
+}
