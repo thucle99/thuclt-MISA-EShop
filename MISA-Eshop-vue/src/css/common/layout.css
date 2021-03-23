@@ -1,13 +1,14 @@
 .body-left{
-    width: 220px;
+    width: 180px;
     height: 100vh;
     border-right: 1px solid #bbbbbb;
+    background-color: #2b3173;
 }
 
 .body-right{
     position: absolute;
-    left: 221px;
+    left: 181px;
     height: 100vh;
     top: 0px;
-    width: calc(100% - 221px);
+    width: calc(100% - 181px);
 }

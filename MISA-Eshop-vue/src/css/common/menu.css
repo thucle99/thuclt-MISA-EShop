@@ -3,6 +3,7 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    color: white;
 }
 ul{
     list-style-type: none;
@@ -11,14 +12,17 @@ ul{
 }
 
 .navbar-item img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     padding:12px 10px 12px 16px;
 }
 .navbar-item:hover{
-    background-color: #e5e5e5;
+    background-color: #1e235a;
 }
 .navbar-item:focus{
     color: #ffffff;
-    background-color: #019160;
+    background-color: #1e235a;
+}
+hr{
+    border: 1px solid #241e72;
 }

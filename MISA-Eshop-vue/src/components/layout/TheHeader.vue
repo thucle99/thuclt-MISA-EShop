@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+    <p>Cửa hàng</p>
     <div class="branch">
       <select name="" id="">
         <option value="">Nhà hàng Biển Đông</option>
@@ -8,10 +9,11 @@
         <option value="">Nhà hàng Cầu Giấy</option>
       </select>
     </div>
-    <div class="profile">
-      <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
+    <div class="right-header">
+      <!-- <img src="../../content/icon/avatar-default.png" class="avatar" alt="" /> -->
       <p>Lê Trung Thực</p>
-      <img src="../../content/icon/option.png" class="option" alt="" />
+       <img src="../../content/icon/option.png" class="notification" alt="" />
+      <!-- <p class="option">?</p> -->
     </div>
   </div>
 </template>
