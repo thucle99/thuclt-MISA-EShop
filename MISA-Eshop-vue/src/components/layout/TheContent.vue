@@ -27,15 +27,45 @@
       <table>
         <thead>
           <tr>
-            <th style="width: 168px">Mã cửa hàng</th>
-            <th style="width: 281px">Tên cửa hàng</th>
-            <th>Địa chỉ</th>
-            <th>Số điện thoại</th>
-            <th>Trạng thái</th>
+            <th style="width: 168px">
+              <div class="title">Mã cửa hàng</div>
+              <div class="filter">
+                <span>*</span>
+              <input type="text" />
+              </div>
+            </th>
+            <th style="width: 281px">
+              <div class="title">Tên cửa hàng</div>
+              <div class="filter">
+                <span>*</span>
+              <input type="text" />
+              </div>
+            </th>
+            <th>
+              <div class="title">Địa chỉ</div>
+              <div class="filter">
+                <span>*</span>
+              <input type="text" />
+              </div>
+            </th>
+            <th>
+              <div class="title">Số điện thoại</div>
+              <div class="filter">
+                <span>*</span>
+              <input type="text" />
+              </div>
+            </th>
+            <th>
+              <div class="title">Trạng thái</div>
+              <div class="filter">
+                <span>*</span>
+              <input type="text" />
+              </div>
+            </th>
           </tr>
 
-          <tr class="filter">
-            <th style="width: 168px">
+          <!-- <tr id="filter">
+            <th style="width: 168px;">
               <span>*</span>
               <input type="text" />
             </th>
@@ -43,7 +73,7 @@
             <th>Địa chỉ</th>
             <th>Số điện thoại</th>
             <th>Trạng thái</th>
-          </tr>
+          </tr> -->
         </thead>
         <tbody>
           <tr>
