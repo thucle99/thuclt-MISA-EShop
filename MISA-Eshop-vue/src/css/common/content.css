@@ -39,7 +39,6 @@ main{
     .content .gird-table {
         overflow: scroll;
         width: 100%;
-        padding: 0px;
         height: calc(100vh - 156px);
     }
     .content .gird-table table{

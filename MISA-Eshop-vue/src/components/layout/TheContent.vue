@@ -1,8 +1,6 @@
 <template>
   <!-- <StoreList /> -->
-  <div>
      <router-view></router-view>
-  </div>
 </template>
 
 <script>
@@ -16,5 +14,5 @@ export default {
 </script>
 
 <style scoped>
-@import url("../../css/common/content.css");
+/* @import url("../../css/common/content.css"); */
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="body-left">
+  <div >
     <div class="logo-site">
       <div class="toggle-icon">
         <img src="../../content/img/logo.png" alt="" />

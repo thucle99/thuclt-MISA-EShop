@@ -1,10 +1,10 @@
 <template>
   <div class="content">
-     <StoreListDetail
+     <!-- <StoreListDetail
       @closePopup="closePopup"
       :isHide="isHideDetail"
       ref="Datail"
-    />
+    /> -->
     <div class="header-content">
       <div class="item-action" id="btnAdd" @click="btnAddStore">
         <img src="../../../../content/icon/icon-add.png" alt="" />
@@ -172,12 +172,12 @@
 </template>
 
 <script>
-import StoreListDetail from "./StoreListDetail";
+// import StoreListDetail from "./StoreListDetail";
 import TheFooter from '../../../layout/TheFooter'
 export default {
   name: "Content",
   components: {
-    StoreListDetail,
+    // StoreListDetail,
     TheFooter
   },
   data() {
