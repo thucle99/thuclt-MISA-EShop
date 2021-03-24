@@ -1,0 +1,43 @@
+.paging-bar{
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    align-items: center;
+    height: 56px;
+    background-color: #ffffff;
+} 
+    .paging-bar .paging-info{
+        position: absolute;
+        padding-left: 15px;
+    }
+        .paging-bar .paging-info .btn{
+            border:1px solid #bbbbbb;
+            padding: 5px 10px;
+            margin-right: 1px;
+        }
+        .paging-bar .paging-info .btn-reload{
+            padding: 4px 10px;
+        }
+        .paging-bar .paging-info .page{
+            padding: 0 10px;
+        }
+        .paging-bar .paging-info .max-page{
+            padding:4px 5px;
+            border:1px solid #bbbbbb;
+        }
+        .paging-bar .paging-info .max-page .bottom-arrow{
+            width: 10px;
+            height: 10px;
+            padding-left: 7px;
+        }
+        
+        .paging-bar .paging-info .number-page{
+            padding: 4px 20px;
+            border:1px solid #bbbbbb;
+        }
+    .paging-bar .paging-option{
+        position: absolute;
+        right: 25px;
+    }

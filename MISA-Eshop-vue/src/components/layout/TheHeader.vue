@@ -1,19 +1,27 @@
 <template>
   <div class="header">
-    <p>Cửa hàng</p>
-    <div class="branch">
-      <select name="" id="">
-        <option value="">Nhà hàng Biển Đông</option>
-        <option value="">Nhà hàng Hải Dương</option>
-        <option value="">Nhà hàng Đội Cấn</option>
-        <option value="">Nhà hàng Cầu Giấy</option>
-      </select>
-    </div>
+    <p class="store">Cửa hàng</p>
     <div class="right-header">
-      <!-- <img src="../../content/icon/avatar-default.png" class="avatar" alt="" /> -->
+      <div class="branch">
+        <select name="" id="">
+          <option value="">BLACKLEO- 160 Lê Trung Thực</option>
+          <option value="">DODAVI- 160 Hoàng Hoa Thám</option>
+          <option value="">COXUDE- 150 Nguyễn Thị Ngọc</option>
+        </select>
+      </div>
+      <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
       <p>Lê Trung Thực</p>
-       <img src="../../content/icon/option.png" class="notification" alt="" />
-      <!-- <p class="option">?</p> -->
+      <img
+        src="../../content/icon/bottom-arrow.jpg"
+        class="bottom-arrow"
+        alt=""
+      />
+      <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
+      <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
+      <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
+      <!-- <img src="../../content/icon/ic_support.svg" class="support" alt="" />
+      <img src="../../content/icon/ic_support.svg" class="support" alt="" />
+      <img src="../../content/icon/ic_support.svg" class="support" alt="" /> -->
     </div>
   </div>
 </template>

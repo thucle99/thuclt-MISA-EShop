@@ -16,17 +16,21 @@
           <p>Báo cáo</p>
         </a>
         <a href="#" class="navbar-item">
-          <img src="../../content/icon/dashboard.png" alt="" />
+          <img src="../../content/icon/document-online.png" alt="" />
           <p>Đơn hàng</p>
         </a>
         <a href="#" class="navbar-item" >
-          <img src="../../content/icon/dic-employee.png" alt="" />
+          <img src="../../content/icon/store-online.png" alt="" />
           <span>Mua hàng</span>
         </a>
-        <a href="#" class="navbar-item" >
-          <img src="../../content/icon/dic-employee.png" alt="" />
-          <span>Quản lý cửa hàng</span>
+         <a href="#" class="navbar-item" >
+          <img src="../../content/icon/sales.png" alt="" />
+          <span>Mua hàng</span>
         </a>
+        <router-link  class="navbar-item" to="/dictionary/store">
+          <img src="../../content/icon/manager.png" alt="" />
+          <span>Quản lý cửa hàng</span>
+        </router-link>
         <hr>
         <a href="#" class="navbar-item">
           <img src="../../content/icon/setting.png" alt="" />
