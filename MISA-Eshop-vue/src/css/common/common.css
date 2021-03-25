@@ -6,11 +6,13 @@
 }
 /* css input  */
 .m-lable {
-  padding: 8px 0px;
+  padding: 5px 20px 5px 0;
 }
 .m-input {
   height: 40px;
-  width: 100%;
+  width: calc(100% - 145px);
+  right:20px ;
+  position: absolute;
   padding: 5px 15px;
   box-sizing: border-box;
   outline: none;
@@ -27,6 +29,11 @@
   width: 33.33333%;
   padding: 10px 5px;
   box-sizing: border-box;
+}
+.col-2{
+  width: 50%;
+  display: flex;
+  position: relative;
 }
 .col-8{
   width: 66.66666%;

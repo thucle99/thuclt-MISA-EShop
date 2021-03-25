@@ -11,7 +11,7 @@ main{
 }
 /* Css herder content */
     .content .header-content{
-        background-color: #2b3173;
+        background-color: #026b97;
         height: 40px;
         color: white;
         display: flex;
@@ -22,12 +22,17 @@ main{
            height: 100%;
            display: flex;
            align-items: center;
-           border-right: 2px solid #1e235a;
+           border-right: 2px solid #00577b;
            outline: none;
            cursor: pointer;
         }
+        .content .header-content .item-action:hover{
+           
+            background-color:  #0088c1;
+           
+         }
         .content .header-content .icon-loaded{
-           border-right: 0px solid #1e235a;
+           border-right: 0px solid #00577b;
         }
             .content .header-content .item-action img{
                 width: 10px;

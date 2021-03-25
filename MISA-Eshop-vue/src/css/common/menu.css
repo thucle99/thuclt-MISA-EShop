@@ -17,12 +17,12 @@ ul{
     padding:12px 10px 12px 16px;
 }
 .navbar-item:hover{
-    background-color: #1e235a;
+    background-color: #0088c1;
 }
 .navbar-item:focus{
     color: #ffffff;
-    background-color: #1e235a;
+    background-color: #00577b;
 }
 hr{
-    border: 1px solid #241e72;
+    border: 1px solid #00577b;
 }

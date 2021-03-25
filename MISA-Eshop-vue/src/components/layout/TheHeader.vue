@@ -19,9 +19,7 @@
       <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
       <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
       <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
-      <!-- <img src="../../content/icon/ic_support.svg" class="support" alt="" />
-      <img src="../../content/icon/ic_support.svg" class="support" alt="" />
-      <img src="../../content/icon/ic_support.svg" class="support" alt="" /> -->
+     
     </div>
   </div>
 </template>
