@@ -76,6 +76,15 @@ main{
         border-bottom: 0;
         border-left: 0;
     }
+    .filter .select-status{
+        width: calc(100% - 2px);
+        outline: none;
+        margin:0 1px;
+        font-size: 13px;
+        padding: 14px 0px 7px 7px;
+        border: 1px solid #e0e0e0;
+        border-bottom: 0;
+    }
 
     .content .gird-table table td{
         padding: 10px 15px;

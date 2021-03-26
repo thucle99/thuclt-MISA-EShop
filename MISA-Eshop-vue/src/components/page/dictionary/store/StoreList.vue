@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-     <StoreListDetail
+    <StoreListDetail
       @closePopup="closePopup"
       :isHide="isHideDetail"
       ref="Datail"
@@ -62,11 +62,15 @@
                   <input type="text" />
                 </div>
               </th>
-              <th>
+              <th style="max-width: 100px">
                 <div class="title">Trạng thái</div>
                 <div class="filter">
-                  <span>*</span>
-                  <input type="text" />
+                  <select name="" id="" class="select-status">
+                    <option value="">Trạng thái</option>
+                    <option value="">Đang hoạt động</option>
+                    <option value="">Đang Off</option>
+                    <option value="">Ẩn trạng thái</option>
+                  </select>
                 </div>
               </th>
             </tr>
@@ -173,12 +177,12 @@
 
 <script>
 import StoreListDetail from "./StoreListDetail";
-import TheFooter from '../../../layout/TheFooter'
+import TheFooter from "../../../layout/TheFooter";
 export default {
   name: "Content",
   components: {
     StoreListDetail,
-    TheFooter
+    TheFooter,
   },
   data() {
     return {
@@ -188,15 +192,15 @@ export default {
   methods: {
     btnAddStore() {
       this.isHideDetail = false;
-      // setTimeout(() => {
-      //   this.$refs.Datail.$refs.ab.focus();
-      // }, 0);
-      console.log('isHideDetail',this.isHideDetail);
+      setTimeout(() => {
+        this.$refs.Datail.$refs.StoreCode.focus();
+      }, 0);
+      console.log("isHideDetail", this.isHideDetail);
     },
     closePopup(value) {
       this.isHideDetail = value;
     },
-  }
+  },
 };
 </script>
 

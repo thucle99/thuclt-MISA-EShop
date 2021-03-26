@@ -1,5 +1,9 @@
 <template>
-  <div class="m-dialog dialog-detail" title="Thông tin khách hàng">
+  <div
+    class="m-dialog dialog-detail"
+    :class="{ isHide: isHide }"
+    title="Thông tin cửa hàng"
+  >
     <div class="dialog-modal"></div>
     <div class="dialog-content">
       <div class="dialog-header">
@@ -11,11 +15,11 @@
       <div class="dialog-body">
         <div class="row">
           <div class="m-lable">Mã cửa hàng <span class="require">*</span></div>
-          <input class="m-input" tabindex="1" type="text" required ref="ab" />
+          <input class="m-input" ref="StoreCode" tabindex="1" type="text" required />
         </div>
         <div class="row">
           <div class="m-lable">Tên cửa hàng <span class="require">*</span></div>
-          <input class="m-input" tabindex="2" type="text" required ref="ab" />
+          <input class="m-input" tabindex="2" type="text" required  />
         </div>
         <div class="row row-area">
           <div class="m-lable lable-area">
@@ -29,20 +33,18 @@
             <div class="m-lable">Số điện thoại</div>
             <input
               class="m-input-both"
-              tabindex="2"
+              tabindex="4"
               type="text"
               required
-              ref="ab"
             />
           </div>
           <div class="col-2">
             <div class="m-lable lable-right">Mã số thuế</div>
             <input
               class="m-input-both"
-              tabindex="2"
+              tabindex="5"
               type="text"
               required
-              ref="ab"
             />
           </div>
         </div>
@@ -50,7 +52,7 @@
         <div class="row">
           <div class="col-2">
             <div class="m-lable">Quốc gia</div>
-            <select name="" id="" class="m-input-both">
+            <select name="" id="" class="m-input-both" tabindex="6">
               <option value="">Việt Nam</option>
               <option value="">Lào</option>
               <option value="">Campuchia</option>
@@ -61,7 +63,7 @@
         <div class="row">
           <div class="col-2">
             <div class="m-lable">Tỉnh/Thành phố</div>
-            <select name="" id="" class="m-input-both">
+            <select name="" id="" class="m-input-both" tabindex="7">
               <option value="">Việt Nam</option>
               <option value="">Lào</option>
               <option value="">Campuchia</option>
@@ -69,7 +71,7 @@
           </div>
           <div class="col-2">
             <div class="m-lable lable-right">Quận/Huyện</div>
-            <select name="" id="" class="m-input-both">
+            <select name="" id="" class="m-input-both" tabindex="7">
               <option value="">Việt Nam</option>
               <option value="">Lào</option>
               <option value="">Campuchia</option>
@@ -80,7 +82,7 @@
         <div class="row">
           <div class="col-2">
             <div class="m-lable">Phường/Xã</div>
-            <select name="" id="" class="m-input-both">
+            <select name="" id="" class="m-input-both" tabindex="7">
               <option value="">Việt Nam</option>
               <option value="">Lào</option>
               <option value="">Campuchia</option>
@@ -90,26 +92,28 @@
             <div class="m-lable lable-right">Đường phố</div>
             <input
               class="m-input-both"
-              tabindex="2"
+              tabindex="8"
               type="text"
               required
-              ref="ab"
             />
           </div>
         </div>
       </div>
       <div class="dialog-footer">
         <div class="footer-left">
+          <img src="../../../../content/icon/icon-question.png" alt="" />
           <span>Trợ giúp</span>
         </div>
         <div class="footer-right">
-          <div class="item-action">
+          <div class="item-action itemSave">
+            <img src="../../../../content/icon/document-online.png" alt="" />
             <span>Lưu</span>
           </div>
-          <div class="item-action">
+          <div class="item-action itemAdd">
             <span>Lưu và thêm mới</span>
           </div>
-          <div class="item-action">
+          <div class="item-action itemCancel" @click="btnCancel">
+            <img src="../../../../content/icon/x.svg" alt="" />
             <span>Hủy bỏ</span>
           </div>
         </div>

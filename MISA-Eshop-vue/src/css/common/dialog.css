@@ -16,10 +16,10 @@
     .m-dialog .dialog-content{
         position: absolute;
         width: 800px;
-        height: 650px;
+        height: 600px;
         background-color: #ffffff;
         z-index: 1000;
-        top: calc( 50% - 325px);
+        top: calc( 50% - 300px);
         right: calc( 50% - 310px);
         border-radius: 5px;
     }
@@ -30,6 +30,8 @@
         display: flex;
         padding: 10px 10px 10px 20px;
         background-color: #f1f1f1;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
     .m-dialog .dialog-header .dialog-header-title{
         font-size: 20px;
@@ -100,17 +102,63 @@
         padding:30px 20px;
         display: flex;
         align-items: center;
+        font-weight: 700;
     }
+
+    .dialog-footer .footer-left{
+        display: flex;
+        color: #026b97;
+        /* font-weight: bold; */
+    }
+    .dialog-footer .footer-left img{
+        width: 20px;
+        height: 20px;
+        padding-right: 15px;
+    }
+
     .dialog-footer .footer-right{
        position: absolute;
        right: 20px;
        display:flex;
 
     }
+    
     .dialog-footer .item-action{
         padding: 10px 15px;
-        background-color: red;
+        display: flex;
         margin: 0px 5px;
+        border-radius: 5px;
+    }
+
+    .dialog-footer .itemSave{
+        background-color: #026b97;
+        color: white;
+    }
+    .dialog-footer .itemSave:hover{
+        background-color: #0088c1;
+    }
+
+    .dialog-footer .itemAdd{
+        border:1px solid #026b97;
+        color: #026b97;
+    }
+    .dialog-footer .itemAdd:hover{
+        background-color: #d1f1ff;
+    }
+
+    .dialog-footer .itemCancel:hover{
+        background-color: #d1f1ff;
+    }
+
+
+    .dialog-footer .footer-right img{
+        width: 15px;
+        height: 15px;
+        padding-right: 15px;
      }
+     /* .dialog-footer .footer-right .iconAdd{
+       font-size: 30px;
+        padding-right: 15px;
+     } */
 
       
