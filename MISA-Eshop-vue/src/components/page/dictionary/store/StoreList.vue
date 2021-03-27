@@ -2,8 +2,14 @@
   <div class="content">
     <StoreListDetail
       @closePopup="closePopup"
+      @closePopupDelete="closePopupDelete"
       :isHide="isHideDetail"
       ref="Datail"
+    />
+     <StoreConform
+      @closePopupDelete="closePopupDelete"
+      :isHide="isHideConfirm"
+      :storeDelete="storeDelete"
     />
     <div class="header-content">
       <div class="item-action" id="btnAdd" @click="btnAddStore">
@@ -18,7 +24,7 @@
         <img src="../../../../content/icon/icon-edit.png" alt="" />
         <span>Sửa</span>
       </div>
-      <div class="item-action">
+      <div class="item-action" @click="btnDeleteStore">
         <img src="../../../../content/icon/icon-delete.png" alt="" />
         <span>Xóa</span>
       </div>
@@ -66,7 +72,6 @@
                 <div class="title">Trạng thái</div>
                 <div class="filter">
                   <select name="" id="" class="select-status">
-                    <option value="">Trạng thái</option>
                     <option value="">Đang hoạt động</option>
                     <option value="">Đang Off</option>
                     <option value="">Ẩn trạng thái</option>
@@ -76,96 +81,15 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
-            </tr>
-            <tr>
-              <td style="max-widtd: 100px">CH1234</td>
-              <td>Hoàng Long</td>
-              <td>Số 35 ngõ 4, Đào Xá, Hoàng Long, Phú Xuyên, Hà Nội</td>
-              <td>Số điện thoại</td>
-              <td>Trạng thái</td>
+            <tr class="table" tabindex="15"
+             v-for="item in stores" :key="item.StoreId"
+             @click="selectCustomer(item)"
+             >
+              <td style="max-widtd: 100px">{{ item.StoreCode }}</td>
+              <td>{{ item.StoreName }}</td>
+              <td>{{ item.StoreAddress }}</td>
+              <td style="max-width: 50px">{{ item.StorePhoneNumber }}</td>
+              <td>{{ item.StoreStatus }}</td>
             </tr>
           </tbody>
         </table>
@@ -176,17 +100,23 @@
 </template>
 
 <script>
+import axios from "axios";
 import StoreListDetail from "./StoreListDetail";
+import StoreConform from "./StoreConform";
 import TheFooter from "../../../layout/TheFooter";
 export default {
   name: "Content",
   components: {
     StoreListDetail,
+    StoreConform,
     TheFooter,
   },
   data() {
     return {
+      stores: [],
       isHideDetail: true,
+      isHideConfirm: true,
+      storeDelete:{}
     };
   },
   methods: {
@@ -200,6 +130,22 @@ export default {
     closePopup(value) {
       this.isHideDetail = value;
     },
+
+    btnDeleteStore() {
+      this.isHideConfirm = false;
+    },
+    closePopupDelete(value) {
+      this.isHideConfirm = value;
+      this.storeDelete = {}
+    },
+    selectCustomer(data) {
+      this.storeDelete = data;
+    },
+  },
+  created() {
+    axios.get("http://localhost:51777/api/v1/stores").then((res) => {
+      this.stores = res.data;
+    });
   },
 };
 </script>

@@ -16,15 +16,16 @@
             border:1px solid #bbbbbb;
             padding: 5px 10px;
             margin-right: 1px;
+            outline: none;
         }
         .paging-bar .paging-info .btn-reload{
-            padding: 4px 10px;
+            padding: 4px 10px 5px 10px;
         }
         .paging-bar .paging-info .page{
             padding: 0 10px;
         }
         .paging-bar .paging-info .max-page{
-            padding:4px 5px;
+            padding:4px 5px 5px 5px;
             border:1px solid #bbbbbb;
         }
         .paging-bar .paging-info .max-page .bottom-arrow{

@@ -30,6 +30,5 @@ export default {
 <style>
 @import url("./css/common/main.css");
 @import url("./css/common/common.css");
-@import url("./css/common/dialog.css");
 @import url("./css/common/layout.css");
 </style>

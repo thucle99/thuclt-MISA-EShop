@@ -43,6 +43,19 @@
             height: 10px;
             padding: 0px 10px;
         }
+        .header .right-header .question{
+            width: 20px;
+            height: 20px;
+            padding: 16px 16px;
+            border-left: 1px solid #bbbbbb;
+        }
+        .header .right-header .support{
+            width: 40px;
+            height: 40px;
+            padding: 5px 4px;
+            border-left: 1px solid #bbbbbb;
+            background-color: #026b97;
+        }
         .header .right-header .option{
             height: 100%;
             margin: 20px;

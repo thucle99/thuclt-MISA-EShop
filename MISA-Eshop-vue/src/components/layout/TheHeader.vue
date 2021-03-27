@@ -16,9 +16,9 @@
         class="bottom-arrow"
         alt=""
       />
-      <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
-      <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
-      <img src="../../content/icon/avatar-default.png" class="avatar" alt="" />
+      <img src="../../content/icon/ic_support.svg" class="support" alt="" />
+      <img src="../../content/icon/notify.png" class="question" alt="" />
+      <img src="../../content/icon/icon-question.png" class="question" alt="" />
      
     </div>
   </div>

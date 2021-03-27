@@ -32,7 +32,7 @@
           <div class="col-2">
             <div class="m-lable">Số điện thoại</div>
             <input
-              class="m-input-both"
+              class="m-input m-input-both"
               tabindex="4"
               type="text"
               required
@@ -41,7 +41,7 @@
           <div class="col-2">
             <div class="m-lable lable-right">Mã số thuế</div>
             <input
-              class="m-input-both"
+              class="m-input m-input-both"
               tabindex="5"
               type="text"
               required
@@ -52,7 +52,7 @@
         <div class="row">
           <div class="col-2">
             <div class="m-lable">Quốc gia</div>
-            <select name="" id="" class="m-input-both" tabindex="6">
+            <select name="" id="" class="m-input m-input-both" tabindex="6">
               <option value="">Việt Nam</option>
               <option value="">Lào</option>
               <option value="">Campuchia</option>
@@ -63,18 +63,25 @@
         <div class="row">
           <div class="col-2">
             <div class="m-lable">Tỉnh/Thành phố</div>
-            <select name="" id="" class="m-input-both" tabindex="7">
-              <option value="">Việt Nam</option>
-              <option value="">Lào</option>
-              <option value="">Campuchia</option>
+            <select name="" id="" class="m-input m-input-both" tabindex="7">
+              <option value="">Hà Nội</option>
+              <option value="">Hồ Chí Minh</option>
+              <option value="">Thanh Hóa</option>
+              <option value="">Bắc Giang</option>
+              <option value="">Lào Cai</option>
+              <option value="">Vĩnh Phúc</option>
+              <option value="">Hưng Yên</option>
             </select>
           </div>
           <div class="col-2">
             <div class="m-lable lable-right">Quận/Huyện</div>
-            <select name="" id="" class="m-input-both" tabindex="7">
-              <option value="">Việt Nam</option>
-              <option value="">Lào</option>
-              <option value="">Campuchia</option>
+            <select name="" id="" class="m-input m-input-both" tabindex="7">
+              <option value="">Phú Xuyên</option>
+              <option value="">Thường Tín</option>
+              <option value="">Thanh Oai</option>
+              <option value="">Thạch Thất</option>
+              <option value="">Ba Vì</option>
+              <option value="">Hoài Đức</option>
             </select>
           </div>
         </div>
@@ -82,16 +89,19 @@
         <div class="row">
           <div class="col-2">
             <div class="m-lable">Phường/Xã</div>
-            <select name="" id="" class="m-input-both" tabindex="7">
-              <option value="">Việt Nam</option>
-              <option value="">Lào</option>
-              <option value="">Campuchia</option>
+            <select name="" id="" class="m-input m-input-both" tabindex="7">
+              <option value="">Hoàng Long</option>
+              <option value="">Hồng Minh</option>
+              <option value="">Phượng Dực</option>
+              <option value="">Tri Chỉ</option>
+              <option value="">Phú Túc</option>
+              <option value="">Văn Hoàng</option>
             </select>
           </div>
           <div class="col-2">
             <div class="m-lable lable-right">Đường phố</div>
             <input
-              class="m-input-both"
+              class="m-input m-input-both"
               tabindex="8"
               type="text"
               required
@@ -142,6 +152,5 @@ export default {
 .isHide {
   display: none;
 }
-/* :class="{ isHide: isHide }" */
-/* @import url("../../css/common/dialog.css"); */
+@import url("../../../../css/common/dialog.css");
 </style>

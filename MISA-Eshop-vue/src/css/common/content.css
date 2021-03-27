@@ -98,3 +98,7 @@ main{
     .content .gird-table table tbody tr:hover{
         background: #e5e6eb;
     } 
+    .table:focus {
+        border: 1px solid blue;
+        background-color: #bbbbbb;
+    }

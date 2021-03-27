@@ -14,5 +14,4 @@ export default {
 </script>
 
 <style scoped>
-/* @import url("../../css/common/content.css"); */
 </style>
