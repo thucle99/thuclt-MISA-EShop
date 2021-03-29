@@ -16,7 +16,7 @@
       <div class="dialog-body">
         <img src="../../../../content/icon/icon-question.png" alt="" />
         <p>
-          Bạn có chắc muốn xóa dữ <span>DODAVI - 25 BÀ TRIỆU</span> khỏi danh
+          Bạn có chắc muốn xóa dữ <span>{{storeDelete.StoreName}}</span> khỏi danh
           sách cửa hàng
         </p>
       </div>

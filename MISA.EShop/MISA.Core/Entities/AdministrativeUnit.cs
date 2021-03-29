@@ -7,59 +7,51 @@ using System.Threading.Tasks;
 namespace MISA.Core.Entities
 {
     /// <summary>
-    /// Thông tin cừa hàng
-    /// CreatedBy: LTTHUC (27/03/2021)
+    /// Thông tin địa chỉ
+    /// CreatedBy: LTTHUC (29/03/2021)
     /// </summary>
-    public class Store
+    public class AdministrativeUnit
     {
         #region Constructor
-        public Store()
+        public AdministrativeUnit()
         {
 
         }
-       
-        public Store(string storeCode)
+        public AdministrativeUnit(string administrativeUnitCode)
         {
-            StoreId = Guid.NewGuid();
-            StoreCode = storeCode;
+            AdministrativeUnitId = Guid.NewGuid();
+            AdministrativeUnitCode = administrativeUnitCode;
         }
         #endregion
 
         #region Properties
 
         /// <summary>
-        /// Id cừa hàng
+        /// Id đơn vị hành chính
         /// </summary>
-        public Guid StoreId { get; set; }
+        public Guid AdministrativeUnitId { get; set; }
 
         /// <summary>
-        /// Mã cừa hàng
+        /// Mã đơn vị hành chính
         /// </summary>
-        public string StoreCode { get; set; }
-
-        public string StoreName { get; set; }
+        public string AdministrativeUnitCode { get; set; }
 
         /// <summary>
-        /// Địa chỉ cửa hàng
+        /// Kiểu đơn vị hành chính: 0-Kiểu quốc gia, 1- Kiểu thành phố, 2- Kiểu huyện/ quận, 3- Kiểu xã/ phường
         /// </summary>
-        public string StoreAddress { get; set; }
+        public string AdministrativeUnitType { get; set; }
 
         /// <summary>
-        /// Số điện thoại
+        /// Tên đơn vị hành chính
         /// </summary>
-        public string StorePhoneNumber { get; set; }
+        public string AdministrativeUnitName { get; set; }
+
 
         /// <summary>
-        /// Trạng thái cửa hàng
+        /// Mô tả
         /// </summary>
-        public string StoreStatus { get; set; }
+        public string Decription { get; set; }
 
-        public string TaxNumber { get; set; }
-
-        /// <summary>
-        /// Id  đơn vị hàng chính cửa hàng
-        /// </summary>
-        public Guid? AdministrativeUnitId { get; set; }
 
 
         /// <summary>
@@ -81,11 +73,6 @@ namespace MISA.Core.Entities
         /// Ngưởi sửa
         /// </summary>
         public string ModifiledBy { get; set; }
-
-        #endregion
-
-        #region Other
-
         #endregion
     }
 }

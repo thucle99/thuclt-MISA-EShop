@@ -15,17 +15,24 @@
       <div class="dialog-body">
         <div class="row">
           <div class="m-lable">Mã cửa hàng <span class="require">*</span></div>
-          <input class="m-input" ref="StoreCode" tabindex="1" type="text" required />
+          <input
+            class="m-input"
+            tabindex="1"
+            type="text"
+            required
+            ref="StoreCode"
+            v-model="store.StoreCode"
+          />
         </div>
         <div class="row">
           <div class="m-lable">Tên cửa hàng <span class="require">*</span></div>
-          <input class="m-input" tabindex="2" type="text" required  />
+          <input class="m-input" v-model="store.StoreName" tabindex="2" type="text" required />
         </div>
         <div class="row row-area">
           <div class="m-lable lable-area">
             Địa chỉ <span class="require">*</span>
           </div>
-          <textarea tabindex="3" rows="6" class="text-area"></textarea>
+          <textarea v-model="store.StoreAddress" tabindex="3" rows="6" class="text-area"></textarea>
         </div>
 
         <div class="row">
@@ -36,6 +43,7 @@
               tabindex="4"
               type="text"
               required
+              v-model="store.StorePhoneNumber"
             />
           </div>
           <div class="col-2">
@@ -45,6 +53,7 @@
               tabindex="5"
               type="text"
               required
+              v-model="store.TaxNumber"
             />
           </div>
         </div>
@@ -115,7 +124,7 @@
           <span>Trợ giúp</span>
         </div>
         <div class="footer-right">
-          <div class="item-action itemSave">
+          <div class="item-action itemSave" @click="btnSaveStore">
             <img src="../../../../content/icon/document-online.png" alt="" />
             <span>Lưu</span>
           </div>
@@ -133,13 +142,26 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "StoreListDatail",
   data() {
     return {};
   },
-  props: ["isHide"],
+  props: ["isHide", "store"],
   methods: {
+    btnSaveStore() {
+      axios
+        .post("http://localhost:51777/api/v1/customers", this.store)
+        .then((res) => {
+          console.log("res", res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+      this.$emit("closePopup", true);
+    },
+
     btnCancel() {
       this.$emit("closePopup", true);
       // dùng để thay đổi giá trị của props do thằng cha truyền sang

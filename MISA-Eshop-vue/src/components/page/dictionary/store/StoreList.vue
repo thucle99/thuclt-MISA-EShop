@@ -3,6 +3,7 @@
     <StoreListDetail
       @closePopup="closePopup"
       @closePopupDelete="closePopupDelete"
+      :store="store"
       :isHide="isHideDetail"
       ref="Datail"
     />
@@ -114,6 +115,32 @@ export default {
   data() {
     return {
       stores: [],
+      // store:{
+      //   StoreCode: "CH10",
+      //   StoreName: "Phuong Le",
+      //   StoreAddress: "ha noi",
+      //   StorePhoneNumber: "0248248924",
+      //   StoreStatus: "Đang hoạt động",
+      //   TaxNumber: 12345,
+      //   AdministrativeUnitId: "11452b0c-768e-5ff7-0d63-eeb1d8ed8cef",
+      //   CreatedDate: "2021-03-26T12:19:19",
+      //   CreatedBy: null,
+      //   ModifiledDate: null,
+      //   ModifiledBy: null
+      // },
+      store:{
+        StoreCode: "",
+        StoreName: "",
+        StoreAddress: "",
+        StorePhoneNumber: "",
+        StoreStatus: "",
+        TaxNumber: null,
+        AdministrativeUnitId: "",
+        CreatedDate: "",
+        CreatedBy: null,
+        ModifiledDate: null,
+        ModifiledBy: null
+      },
       isHideDetail: true,
       isHideConfirm: true,
       storeDelete:{}

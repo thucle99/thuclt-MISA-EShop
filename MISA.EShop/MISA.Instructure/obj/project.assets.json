@@ -96,19 +96,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Le Trung Thuc\\.nuget\\packages\\": {}
+    "C:\\Users\\ltthuc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj",
+      "projectUniqueName": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj",
       "projectName": "MISA.Instructure",
-      "projectPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj",
-      "packagesPath": "C:\\Users\\Le Trung Thuc\\.nuget\\packages\\",
-      "outputPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\obj\\",
+      "projectPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj",
+      "packagesPath": "C:\\Users\\ltthuc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Le Trung Thuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ltthuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -122,8 +122,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj": {
-              "projectPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj"
+            "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj": {
+              "projectPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj"
             }
           }
         }
@@ -152,7 +152,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

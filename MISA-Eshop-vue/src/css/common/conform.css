@@ -60,6 +60,9 @@
         height: 40px;
         padding-right: 15px;
     }
+    .n-dialog .dialog-body span{
+       font-weight: bold;
+    }
 
     /* css dialog-footer */
 

@@ -40,3 +40,17 @@ E:\Vuejs\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.cspro
 E:\Vuejs\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.dll
 E:\Vuejs\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\ref\MISA.Core.dll
 E:\Vuejs\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.pdb
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.dll
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\ref\MISA.Core.dll
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.pdb
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\bin\Debug\net5.0\MISA.Core.deps.json
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\bin\Debug\net5.0\MISA.Core.dll
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\bin\Debug\net5.0\ref\MISA.Core.dll
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\bin\Debug\net5.0\MISA.Core.pdb
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.csprojAssemblyReference.cache
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.Properties.Resources.resources
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.csproj.GenerateResource.cache
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.AssemblyInfoInputs.cache
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.AssemblyInfo.cs
+C:\Users\ltthuc\Desktop\thuclt-MISA-EShop\MISA.EShop\MISA.Core\obj\Debug\net5.0\MISA.Core.csproj.CoreCompileInputs.cache
