@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\MISA.EShop.Api.csproj": {}
+    "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\MISA.EShop.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj": {
+    "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj",
+        "projectUniqueName": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj",
         "projectName": "MISA.Core",
-        "projectPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj",
-        "packagesPath": "C:\\Users\\ltthuc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\obj\\",
+        "projectPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj",
+        "packagesPath": "C:\\Users\\Le Trung Thuc\\.nuget\\packages\\",
+        "outputPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ltthuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Le Trung Thuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,21 +64,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\MISA.EShop.Api.csproj": {
+    "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\MISA.EShop.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\MISA.EShop.Api.csproj",
+        "projectUniqueName": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\MISA.EShop.Api.csproj",
         "projectName": "MISA.EShop.Api",
-        "projectPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\MISA.EShop.Api.csproj",
-        "packagesPath": "C:\\Users\\ltthuc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\obj\\",
+        "projectPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\MISA.EShop.Api.csproj",
+        "packagesPath": "C:\\Users\\Le Trung Thuc\\.nuget\\packages\\",
+        "outputPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.CukCuk.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ltthuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Le Trung Thuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,11 +92,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj": {
-                "projectPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj"
+              "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj": {
+                "projectPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj"
               },
-              "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj": {
-                "projectPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj"
+              "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj": {
+                "projectPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj"
               }
             }
           }
@@ -142,21 +142,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj": {
+    "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj",
+        "projectUniqueName": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj",
         "projectName": "MISA.Instructure",
-        "projectPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj",
-        "packagesPath": "C:\\Users\\ltthuc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\obj\\",
+        "projectPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\MISA.Instructure.csproj",
+        "packagesPath": "C:\\Users\\Le Trung Thuc\\.nuget\\packages\\",
+        "outputPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Instructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ltthuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Le Trung Thuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,8 +170,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj": {
-                "projectPath": "C:\\Users\\ltthuc\\Desktop\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj"
+              "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj": {
+                "projectPath": "E:\\Vuejs\\thuclt-MISA-EShop\\MISA.EShop\\MISA.Core\\MISA.Core.csproj"
               }
             }
           }
@@ -200,7 +200,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

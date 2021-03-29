@@ -36,14 +36,16 @@ namespace MISA.CukCuk.Api
             .AddJsonOptions(opts => opts.JsonSerializerOptions.PropertyNamingPolicy = null);
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MISA.CukCuk.Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MISA.EShop.Api", Version = "v1" });
             });
 
             // Chỉ định BaseService sẽ sử dụng IBaseService
             services.AddScoped<IBaseService, BaseService>();
             services.AddScoped<IStoreService, StoreService>();
+            services.AddScoped<IAdministrativeUnitService, AdministrativeUnitService>();
             services.AddScoped<IBaseRepository, BaseRepository>();
             services.AddScoped<IStoreRepository, StoreRepository>();
+            services.AddScoped<IAdministrativeUnitRepository, AdministrativeUnitRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,7 +55,7 @@ namespace MISA.CukCuk.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MISA.CukCuk.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MISA.EShop.Api v1"));
             }
 
             app.UseRouting();

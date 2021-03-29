@@ -13,6 +13,19 @@
         background-color: black;
         z-index: 999;
     }
+    .m-dialog .dialog-err{
+        position: absolute;
+        background-color: #026b97;
+        color: white;
+        z-index: 1000;
+        top: 100px;
+        width: 300px;
+        padding: 10px 0;
+        text-align: center;
+        right: calc( 50% - 110px);
+        border-radius: 5px;
+    }
+
     .m-dialog .dialog-content{
         position: absolute;
         width: 800px;

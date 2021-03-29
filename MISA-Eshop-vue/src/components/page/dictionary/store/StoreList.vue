@@ -10,7 +10,7 @@
      <StoreConform
       @closePopupDelete="closePopupDelete"
       :isHide="isHideConfirm"
-      :storeDelete="storeDelete"
+      :storeSelect="storeSelect"
     />
     <div class="header-content">
       <div class="item-action" id="btnAdd" @click="btnAddStore">
@@ -21,7 +21,7 @@
         <img src="../../../../content/icon/icon-copy.png" alt="" />
         <span>Nhân bản</span>
       </div>
-      <div class="item-action">
+      <div class="item-action" @click="btnUpdateStore">
         <img src="../../../../content/icon/icon-edit.png" alt="" />
         <span>Sửa</span>
       </div>
@@ -86,7 +86,7 @@
              v-for="item in stores" :key="item.StoreId"
              @click="selectCustomer(item)"
              >
-              <td style="max-widtd: 100px">{{ item.StoreCode }}</td>
+              <td style="max-width: 100px">{{ item.StoreCode }}</td>
               <td>{{ item.StoreName }}</td>
               <td>{{ item.StoreAddress }}</td>
               <td style="max-width: 50px">{{ item.StorePhoneNumber }}</td>
@@ -143,16 +143,20 @@ export default {
       },
       isHideDetail: true,
       isHideConfirm: true,
-      storeDelete:{}
+      storeSelect:{}
     };
   },
   methods: {
     btnAddStore() {
+      this.store={};
       this.isHideDetail = false;
       setTimeout(() => {
         this.$refs.Datail.$refs.StoreCode.focus();
       }, 0);
-      console.log("isHideDetail", this.isHideDetail);
+    },
+    btnUpdateStore(){
+      this.store=this.storeSelect;
+      this.isHideDetail = false;
     },
     closePopup(value) {
       this.isHideDetail = value;
@@ -163,10 +167,10 @@ export default {
     },
     closePopupDelete(value) {
       this.isHideConfirm = value;
-      this.storeDelete = {}
+      this.storeSelect = {}
     },
     selectCustomer(data) {
-      this.storeDelete = data;
+      this.storeSelect = data;
     },
   },
   created() {

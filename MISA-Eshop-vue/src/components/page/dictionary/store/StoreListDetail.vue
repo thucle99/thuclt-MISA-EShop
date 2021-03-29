@@ -1,10 +1,9 @@
 <template>
-  <div
-    class="m-dialog dialog-detail"
-    :class="{ isHide: isHide }"
-    title="Thông tin cửa hàng"
-  >
-    <div class="dialog-modal"></div>
+  <div class="m-dialog dialog-detail" :class="{ isHide: isHide }">
+    <div class="dialog-modal">
+      
+    </div>
+    <div class="dialog-err" :class="{ showErr: showErr }">{{err}}</div>
     <div class="dialog-content">
       <div class="dialog-header">
         <div class="dialog-header-title">Thêm mới cửa hàng</div>
@@ -26,13 +25,24 @@
         </div>
         <div class="row">
           <div class="m-lable">Tên cửa hàng <span class="require">*</span></div>
-          <input class="m-input" v-model="store.StoreName" tabindex="2" type="text" required />
+          <input
+            class="m-input"
+            v-model="store.StoreName"
+            tabindex="2"
+            type="text"
+            required
+          />
         </div>
         <div class="row row-area">
           <div class="m-lable lable-area">
             Địa chỉ <span class="require">*</span>
           </div>
-          <textarea v-model="store.StoreAddress" tabindex="3" rows="6" class="text-area"></textarea>
+          <textarea
+            v-model="store.StoreAddress"
+            tabindex="3"
+            rows="6"
+            class="text-area"
+          ></textarea>
         </div>
 
         <div class="row">
@@ -142,24 +152,51 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 export default {
   name: "StoreListDatail",
   data() {
-    return {};
+    return {
+      err: "",
+      showErr: true,
+    };
   },
   props: ["isHide", "store"],
   methods: {
     btnSaveStore() {
-      axios
-        .post("http://localhost:51777/api/v1/customers", this.store)
-        .then((res) => {
-          console.log("res", res.data);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-      this.$emit("closePopup", true);
+      console.log('data',this.store);
+      if (!this.store.StoreCode) {
+        this.err="Mã cửa hàng không được để trống"
+        this.showErr=false;
+        setTimeout( ()=>{
+          this.showErr=true;
+        },1500)
+      } 
+      else if (!this.store.StoreName) {
+        this.err="Tên cửa hàng không được để trống"
+        this.showErr=false;
+         setTimeout( ()=>{
+          this.showErr=true;
+        },1500)
+      } 
+      else if (!this.store.StoreAddress) {
+        this.err="Địa chỉ cửa hàng không được để trống"
+        this.showErr=false;
+         setTimeout( ()=>{
+          this.showErr=true;
+        },1500)
+      } 
+      // else {
+      //   axios
+      //     .post("http://localhost:51777/api/v1/customers", this.store)
+      //     .then((res) => {
+      //       console.log("res", res.data);
+      //     })
+      //     .catch((err) => {
+      //       console.log(err);
+      //     });
+      //   this.$emit("closePopup", true);
+      // }
     },
 
     btnCancel() {
@@ -172,6 +209,9 @@ export default {
 
 <style scoped>
 .isHide {
+  display: none;
+}
+.showErr{
   display: none;
 }
 @import url("../../../../css/common/dialog.css");
