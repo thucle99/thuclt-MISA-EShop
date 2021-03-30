@@ -8,7 +8,6 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-// Nơi xác định dữ liệu,status trả về
 namespace MISA.CukCuk.Api.Api
 {
     [Route("api/v1/[controller]")]
@@ -16,13 +15,12 @@ namespace MISA.CukCuk.Api.Api
     public class BaseController<MISAEntity> : ControllerBase
     {
         protected IBaseService _baseService;
-        // tiêm vào thì gọi IBaseService sẽ thực hiện baseService
         public BaseController(IBaseService baseService)
         {
             this._baseService = baseService;
         }
         /// <summary>
-        /// Lấy danh sách cừa hàng
+        /// Lấy danh sách item 
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -40,7 +38,7 @@ namespace MISA.CukCuk.Api.Api
         }
 
         /// <summary>
-        /// Lấy cừa hàng theo id
+        /// Lấythông tin item theo id
         /// </summary>
         /// <returns></returns>
         [HttpGet("{entityId}")]
@@ -58,9 +56,9 @@ namespace MISA.CukCuk.Api.Api
         }
 
         /// <summary>
-        /// Thêm cừa hàng
+        /// Thêm Item
         /// </summary>
-        /// <param name="store"> Thông tin cừa hàng muốn thêm</param>
+        /// <param name="entity"> Thông tin item muốn thêm</param>
         /// <returns></returns>
         [HttpPost]
         public IActionResult Post(MISAEntity entity)
@@ -104,9 +102,9 @@ namespace MISA.CukCuk.Api.Api
         }
 
         /// <summary>
-        /// Sửa thông tin cừa hàng
+        /// Sửa thông tin item
         /// </summary>
-        /// <param name="entity"> Thông tin cừa hàng muốn sửa</param>
+        /// <param name="entity"> Thông tin item muốn sửa</param>
         /// <returns></returns>
         [HttpPut]
         public IActionResult Put(MISAEntity entity)
@@ -149,9 +147,9 @@ namespace MISA.CukCuk.Api.Api
         }
 
         /// <summary>
-        /// Xóa cừa hàng
+        /// Xóa item
         /// </summary>
-        /// <param name="store">Id cừa hàng muốn xóa</param>
+        /// <param name="entityId">Id thông tin item muốn xóa</param>
         /// <returns></returns>
         [HttpDelete("{entityId}")]
         public IActionResult Delete(Guid entityId)

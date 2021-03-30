@@ -7,10 +7,10 @@
       :isHide="isHideDetail"
       ref="Datail"
     />
-     <StoreConform
+    <StoreConform
       @closePopupDelete="closePopupDelete"
       :isHide="isHideConfirm"
-      :storeDelete="storeDelete"
+      :storeSelect="storeSelect"
     />
     <div class="header-content">
       <div class="item-action" id="btnAdd" @click="btnAddStore">
@@ -21,7 +21,7 @@
         <img src="../../../../content/icon/icon-copy.png" alt="" />
         <span>Nhân bản</span>
       </div>
-      <div class="item-action">
+      <div class="item-action" @click="btnUpdateStore">
         <img src="../../../../content/icon/icon-edit.png" alt="" />
         <span>Sửa</span>
       </div>
@@ -82,11 +82,14 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="table" tabindex="15"
-             v-for="item in stores" :key="item.StoreId"
-             @click="selectCustomer(item)"
-             >
-              <td style="max-widtd: 100px">{{ item.StoreCode }}</td>
+            <tr
+              class="table"
+              tabindex="15"
+              v-for="item in stores"
+              :key="item.StoreId"
+              @click="selectCustomer(item)"
+            >
+              <td style="max-width: 100px">{{ item.StoreCode }}</td>
               <td>{{ item.StoreName }}</td>
               <td>{{ item.StoreAddress }}</td>
               <td style="max-width: 50px">{{ item.StorePhoneNumber }}</td>
@@ -115,58 +118,64 @@ export default {
   data() {
     return {
       stores: [],
-      // store:{
-      //   StoreCode: "CH10",
-      //   StoreName: "Phuong Le",
-      //   StoreAddress: "ha noi",
-      //   StorePhoneNumber: "0248248924",
-      //   StoreStatus: "Đang hoạt động",
-      //   TaxNumber: 12345,
-      //   AdministrativeUnitId: "11452b0c-768e-5ff7-0d63-eeb1d8ed8cef",
-      //   CreatedDate: "2021-03-26T12:19:19",
-      //   CreatedBy: null,
-      //   ModifiledDate: null,
-      //   ModifiledBy: null
-      // },
-      store:{
+      store: {
         StoreCode: "",
         StoreName: "",
         StoreAddress: "",
         StorePhoneNumber: "",
-        StoreStatus: "",
+        StoreStatus: "Đang hoạt động",
         TaxNumber: null,
         AdministrativeUnitId: "",
-        CreatedDate: "",
+        CreatedDate: null,
         CreatedBy: null,
         ModifiledDate: null,
-        ModifiledBy: null
+        ModifiledBy: null,
       },
       isHideDetail: true,
       isHideConfirm: true,
-      storeDelete:{}
+      storeSelect: {},
     };
   },
   methods: {
+    // Thêm mới cửa hàng
+    //Created by LTThuc(27/03/2021)
     btnAddStore() {
+      this.store = {};
       this.isHideDetail = false;
       setTimeout(() => {
         this.$refs.Datail.$refs.StoreCode.focus();
       }, 0);
-      console.log("isHideDetail", this.isHideDetail);
     },
+
+    // Sửa thông tin cửa hàng
+    //Created by LTThuc(27/03/2021)
+    btnUpdateStore() {
+      this.store = this.storeSelect;
+      this.isHideDetail = false;
+    },
+
+    // Đóng popup thông tin chi tiết cửa hàng
+    //Created by LTThuc(27/03/2021)
     closePopup(value) {
       this.isHideDetail = value;
     },
 
+    // Xóa cửa hàng
+    //Created by LTThuc(28/03/2021)
     btnDeleteStore() {
       this.isHideConfirm = false;
     },
+    // Đóng popup  xóa cửa hàng
+    //Created by LTThuc(28/03/2021)
     closePopupDelete(value) {
       this.isHideConfirm = value;
-      this.storeDelete = {}
+      this.storeSelect = {};
     },
+
+    // Chọn cửa hàng để sửa hoặc xóa
+    //Created by LTThuc(27/03/2021)
     selectCustomer(data) {
-      this.storeDelete = data;
+      this.storeSelect = data;
     },
   },
   created() {

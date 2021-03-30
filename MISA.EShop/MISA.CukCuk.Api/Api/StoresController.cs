@@ -14,8 +14,6 @@ namespace MISA.CukCuk.Api.Api
     {
         protected IStoreService _storeService;
 
-        // Tiêm vào
-        //Để dùng được hàm khởi tạo
         public StoresController(IStoreService storeService) : base(storeService)
         {
             this._storeService = storeService;

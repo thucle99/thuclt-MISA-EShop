@@ -16,7 +16,7 @@
       <div class="dialog-body">
         <img src="../../../../content/icon/icon-question.png" alt="" />
         <p>
-          Bạn có chắc muốn xóa dữ <span>{{storeDelete.StoreName}}</span> khỏi danh
+          Bạn có chắc muốn xóa dữ <span>{{storeSelect.StoreName}}</span> khỏi danh
           sách cửa hàng
         </p>
       </div>
@@ -48,14 +48,19 @@ export default {
   data() {
     return {};
   },
-  props: ["isHide", "storeDelete"],
+  props: ["isHide", "storeSelect"],
   methods: {
+     // Hủy xóa cửa hàng
+    //Created by LTThuc(29/03/2021)
     btnCancel() {
       this.$emit("closePopupDelete", true);
     },
+
+     // Xóa cửa hàng
+    //Created by LTThuc(29/03/2021)
     btnDelete() {
       this.$emit("closePopupDelete", true);
-      axios.delete(`http://localhost:51777/api/v1/stores/${this.storeDelete.StoreId}`).then((res) => {
+      axios.delete(`http://localhost:51777/api/v1/stores/${this.storeSelect.StoreId}`).then((res) => {
         console.log('delete success',res.data);
       });
     },

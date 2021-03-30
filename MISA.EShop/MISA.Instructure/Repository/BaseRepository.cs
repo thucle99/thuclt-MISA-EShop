@@ -12,8 +12,6 @@ namespace MISA.Instructure.Repository
 {
     public class BaseRepository : IBaseRepository
     {
-        // connectionString là trường, không thể thay đổi giá trị
-        // _ thể hiện biến private
         protected string _connectionString = "Host = 47.241.69.179; " +
                "Port  = 3306; " +
                "Database = MF750_LTThuc_EShop; " +
@@ -30,19 +28,17 @@ namespace MISA.Instructure.Repository
         /// <returns></returns>
         public IEnumerable<MISAEntity> GetAll<MISAEntity>()
         {
-            //Ngoặc tròn truyền biến, ngoặc nhọn truyền type
             var className = typeof(MISAEntity).Name;
             var customers = _dbConnection.Query<MISAEntity>($"Proc_Get{className}s", commandType: CommandType.StoredProcedure);
             return customers;
         }
 
         /// <summary>
-        /// Lấy thông Object theo id
+        /// Lấy thông item theo id
         /// </summary>
         /// <returns></returns>
         public MISAEntity GetObjectById<MISAEntity>(Guid storeId)
         {
-            // Truyền param vào để tìm kiếm
             var dynamicParams = new DynamicParameters();
             dynamicParams.Add("@StoreId", storeId.ToString());
             var className = typeof(MISAEntity).Name;
@@ -55,7 +51,7 @@ namespace MISA.Instructure.Repository
 
 
         /// <summary>
-        /// Thêm cửa hàng
+        /// Thêm item
         /// </summary>
         /// <param name="entity"></param>
         public int Insert<MISAEntity>(MISAEntity entity)
@@ -69,7 +65,7 @@ namespace MISA.Instructure.Repository
         }
 
         /// <summary>
-        /// Cập nhật thông tin cửa hàng
+        /// Cập nhật thông tin item
         /// </summary>
         /// <param name="entity"></param>
         public int Update<MISAEntity>(MISAEntity entity)
@@ -83,7 +79,7 @@ namespace MISA.Instructure.Repository
         }
 
         /// <summary>
-        /// Xóa cửa hàng
+        /// Xóa item
         /// </summary>
         /// <param name="entity"></param>
         public int Delete<MISAEntity>(Guid entity)

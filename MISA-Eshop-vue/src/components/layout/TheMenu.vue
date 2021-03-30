@@ -1,5 +1,6 @@
 <template>
-  <div >
+  <!-- Left sideBar off page -->
+  <div>
     <div class="logo-site">
       <div class="toggle-icon">
         <img src="../../content/img/logo.png" alt="" />
@@ -19,19 +20,19 @@
           <img src="../../content/icon/document-online.png" alt="" />
           <p>Đơn hàng</p>
         </a>
-        <a href="#" class="navbar-item" >
+        <a href="#" class="navbar-item">
           <img src="../../content/icon/store-online.png" alt="" />
           <span>Mua hàng</span>
         </a>
-         <a href="#" class="navbar-item" >
+        <a href="#" class="navbar-item">
           <img src="../../content/icon/sales.png" alt="" />
           <span>Mua hàng</span>
         </a>
-        <router-link  class="navbar-item" to="/dictionary/store">
+        <router-link class="navbar-item" to="/dictionary/store">
           <img src="../../content/icon/manager.png" alt="" />
           <span>Quản lý cửa hàng</span>
         </router-link>
-        <hr>
+        <hr />
         <a href="#" class="navbar-item">
           <img src="../../content/icon/setting.png" alt="" />
           <p>Hàng hóa</p>

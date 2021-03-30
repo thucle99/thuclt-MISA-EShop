@@ -1,4 +1,5 @@
 <template>
+<!-- Header off page -->
   <div class="header">
     <p class="store">Cửa hàng</p>
     <div class="right-header">

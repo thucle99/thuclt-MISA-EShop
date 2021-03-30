@@ -9,7 +9,6 @@ namespace MISA.Core.Interface
 {
     public interface IStoreService : IBaseService
     {
-        //IEnumerable<Customer> GetCustomerByGender(int gender);
-        //IEnumerable<Customer> GetCustomerByCode(string customerCode);
+      
     }
 }

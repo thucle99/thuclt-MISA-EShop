@@ -1,4 +1,5 @@
 <template>
+  <!-- foorter off page -->
   <div class="paging-bar">
     <div class="paging-info">
       <button class="btn">

@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace MISA.Core.Interface
 {
-    // Tương tác với db
     public interface IBaseRepository
     {
         /// <summary>
-        /// Lấy toàn bộ khách hàng
+        /// Lấy toàn bộ item
         /// </summary>
         /// <typeparam name="MISAEntity">Type</typeparam>
         /// <returns></returns>

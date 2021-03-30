@@ -12,7 +12,7 @@ namespace MISA.Core.Interface
         //validate dữ liệu
 
         /// <summary>
-        /// Lấy toàn bộ khách hàng trả về một mảng
+        /// Lấy toàn bộ item
         /// </summary>
         /// <typeparam name="MISAEntity">Type</typeparam>
         /// <returns></returns>
